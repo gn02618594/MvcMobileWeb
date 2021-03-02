@@ -135,6 +135,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="HtmlPages\PageStructure.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -164,8 +165,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Index.iPhone.cshtml" />
     <Content Include="Views\Home\Index.Android.cshtml" />
-    <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
-    <Content Include="Views\Shared\_Layout.iPhone.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
