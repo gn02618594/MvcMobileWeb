@@ -3,13 +3,13 @@
     <div class="view-switcher ui-bar-a">
         @if (ViewContext.HttpContext.GetOverriddenBrowser().IsMobileDevice)
         {
-            @: Displaying mobile view
-            @Html.ActionLink("Desktop view", "SwitchView", "ViewSwitcher", new { mobile = false, returnUrl = Request.Url.PathAndQuery }, new { rel = "external" })
+            <div>
+                @Html.ActionLink("切換至 Bootstrap Desktop view", "SwitchView", "ViewSwitcher", new { mobile=false,returnUrl=Request.Url.PathAndQuery},new { @class="ui-btn",rel="external"})
+            </div>
         } 
         else 
         {
-            @: Displaying desktop view
-            @Html.ActionLink("Mobile view", "SwitchView", "ViewSwitcher", new { mobile = true, returnUrl = Request.Url.PathAndQuery }, new { rel = "external" })
+            @Html.ActionLink("切換至 JQuery Mobile view", "SwitchView", "ViewSwitcher", new { mobile = true, returnUrl = Request.Url.PathAndQuery }, new { rel = "external" })
         }
     </div>
 }
